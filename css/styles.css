@@ -95,7 +95,7 @@ h1,h2,h3,p{
     display: flex;
     margin-top: 24px;
     margin-bottom: 24px;
-    /* align-items: center; */
+    align-items: center;
 }
 
 /* навигация */
@@ -143,13 +143,12 @@ h1,h2,h3,p{
     text-decoration: none;
     font-size: 16px;
     line-height: 1.5;
-    padding-top: 24px;
-    padding-bottom: 24px;
 }
 
 .auth-nav{
     display: flex;
     margin-left: auto;
+    align-items: center;
 }
 
 .auth-nav .item:first-child{
@@ -161,6 +160,45 @@ h1,h2,h3,p{
     color: var(--irish-color);
 }
 
+.auth-nav li:nth-child(1)::before{
+        display:inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url('../images/089-mobile.svg');
+        margin-right: 14px;
+        background-size: contain;
+        content: "";
+        
+    }
+
+/* .icon-ph{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url('../images/089-mobile.svg');
+    margin-right: 6px;
+    background-size: contain;
+} */
+
+.auth-nav li:nth-child(2)::before{
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url('../images/070-envelop.svg');
+        margin-right: 16px;
+        background-size: contain;
+        content: "";
+
+    }
+
+/* .icon-mail{
+    display: inline-block;
+        width: 16px;
+        height: 16px;
+        background-image: url('../images/070-envelop.svg');
+        margin-right: 8px;
+        background-size: contain;
+} */
 
 /* заголовок */
 .hero{
@@ -243,6 +281,44 @@ h1,h2,h3,p{
 }
 .feature-list .item:last-child {
     margin-right: 0px;
+}
+
+
+.feature-list .item::before{
+    display: flex;
+    height: 112px;
+    width: 264px;
+    background-color: rgba(244, 244, 253, 1) ;
+    content: "";
+    margin-bottom: 8px;
+}
+
+.feature-list .item:nth-child(1)::before{
+    background-image: url("../images/antenna.svg");
+        background-size: 64px ;
+        background-repeat: no-repeat;
+        background-position: 112px 24px ;
+}
+
+.feature-list .item:nth-child(2)::before {
+    background-image: url("../images/clock\ .svg");
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: 112px 24px;
+}
+
+.feature-list .item:nth-child(3)::before {
+    background-image: url("../images/diagram\ .svg");
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: 112px 24px;
+}
+
+.feature-list .item:nth-child(4)::before {
+    background-image: url("../images/astronaut.svg");
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: 112px 24px;
 }
 
 
