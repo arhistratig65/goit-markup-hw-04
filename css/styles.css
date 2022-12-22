@@ -164,7 +164,7 @@ h1,h2,h3,p{
 
 /* заголовок */
 .hero{
-    background-color: var(--title-text-color);
+    /* background-color: var(--title-text-color); */
     text-align: center; 
     padding-top: 192px;
     padding-bottom: 192px;
@@ -172,6 +172,14 @@ h1,h2,h3,p{
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
+    background-image: linear-gradient(
+    to right,
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+    ),
+    url('../images/people-office.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .hero-title{
@@ -195,7 +203,16 @@ h1,h2,h3,p{
     border-radius: 4px;
     padding: 16px 32px;
     min-width: 170px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }   
+
+.hero .button:hover,
+.hero .button:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 
 
 /* список 4 блока */
@@ -306,6 +323,76 @@ h1,h2,h3,p{
     margin-bottom: 8px;
 }
 
+.soc{
+    display: flex;
+    margin-top: 12px;
+    /* margin-left: 16px; */
+    margin-right: auto;
+    justify-content: center;
+}
+
+.seti{
+    width: 40px;
+    height: 40px;
+    margin-right: 24px;
+    background-color: rgba(77, 90, 229, 1);
+    border-radius: 100px;
+
+    
+}
+
+.soc .seti:last-child {
+    margin-right: 0px;
+}
+
+
+/* Customers */
+
+.customers{
+    text-decoration: none;
+    display: flex;
+    
+}
+
+.icon{
+    text-align: center;
+    width: 168px;
+    height: 88px;
+    background-color: aqua;
+    display: flex;
+    margin-right: 24px;
+}
+
+.icon:last-child{
+    margin-right: 0px;
+}
+
+.button-icon{
+    color: rgb(235, 227, 227);
+    margin: auto;
+}
+
+
+
+
+/* .button-icon::after{
+    text-align: center;
+        width: 168px;
+        height: 88px;
+        background-color: aqua;
+        display: flex;
+        margin-right: 24px;
+        background-size: contain;
+        content: "";
+} */
+
+
+.customers-h2{
+    margin-bottom: 72px;
+}
+
+
+
 
 /* футер */
 .footer{
@@ -354,16 +441,14 @@ h1,h2,h3,p{
 /* buttons */
 .list.buttons{
     display: flex;
-    /* margin-top: 96px; */
     margin-bottom: 72px;
     justify-content:center;
     column-gap: 24px;
-    /* row-gap: 48px; */
+    
 }
 
-/* .list.buttons li{
-    margin-right: 24px;
-} */
+
+
 
 .section-portfolio{
     padding-top: 96px;
@@ -386,7 +471,9 @@ h1,h2,h3,p{
 .buttons-menu:focus {
     color: var(--accent-color);
     background-color: var(--irish-color);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+    0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
