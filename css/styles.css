@@ -664,6 +664,10 @@ width: 40px;
 
 }
 
+.social-media .list li:last-child .seti-footer{
+    margin-right: 0px;
+}
+
 .social-media ul li a {
     height: auto;
     width: 100%;
