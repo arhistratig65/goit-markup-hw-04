@@ -82,6 +82,7 @@ h1,h2,h3,p{
     line-height: 1.34;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    
 
 }
 
@@ -143,6 +144,8 @@ h1,h2,h3,p{
     text-decoration: none;
     font-size: 16px;
     line-height: 1.5;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .auth-nav{
@@ -159,6 +162,11 @@ h1,h2,h3,p{
 .auth-nav a:focus {
     color: var(--irish-color);
     fill: var(--irish-color);
+}
+
+.icon-ph-ml{
+    width: 24px;
+    height: 24px;
 }
 
 /* .auth-nav li:nth-child(1)::before{
@@ -438,7 +446,10 @@ h1,h2,h3,p{
     margin-right: 0px;
 }
 
-
+.list.soc li a{
+height: auto;
+width: 100%;
+display: block;}
 
 /* Customers */
 
@@ -558,8 +569,10 @@ h1,h2,h3,p{
     fill: rgba(77, 90, 229, 1);
 }
 
-
-
+.icon a{
+height: auto;
+width: 100%;
+display: block;}
 
 
 
@@ -651,7 +664,11 @@ width: 40px;
 
 }
 
-
+.social-media ul li a {
+    height: auto;
+    width: 100%;
+    display: block;
+}
 
 /* Portfolio */
 
