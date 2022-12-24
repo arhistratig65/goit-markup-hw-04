@@ -167,6 +167,7 @@ h1,h2,h3,p{
 .icon-ph-ml{
     width: 24px;
     height: 24px;
+    margin-bottom: -2px;
 }
 
 /* .auth-nav li:nth-child(1)::before{
