@@ -586,7 +586,7 @@ justify-content: center;
     border: 1px solid #4D5AE5;
 }
 
-.icon a{
+.button-icon a{
 height: 100%;
 width: 100%;
 display: flex;
