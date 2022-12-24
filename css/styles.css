@@ -458,7 +458,11 @@ display: flex;
 align-items: center;
 justify-content: center;
 }
-
+.seti a:hover,.seti a:focus
+{
+    background-color: #404BBF;
+    border-radius: 50%;
+}
 
 /* Customers */
 
@@ -560,29 +564,37 @@ justify-content: center;
     
 } */
 
-.button-icon{
+.button-icon {
     width: 168px;
     height: 88px;
+    margin-right: 24px;
+    
+}
+
+.button-icon a{
     border: 1px solid #8E8F99;
     border-radius: 4px;
-    margin-right: 24px;
-    fill: #8E8F99;
+    
 }
+
+
+.button-icon:hover .button-icon-svg , 
+.button-icon:focus .button-icon-svg{
+    fill: rgba(77, 90, 229, 1);
+}
+
 
 .button-icon-svg{
     fill: #8E8F99;
 }
-.button-icon-svg:hover,
-.button-icon-svg:focus{
-    fill: rgba(77, 90, 229, 1);
-}
 
-.list.customers .icon:last-child .button-icon{
+
+.list.customers .button-icon:last-child{
     margin-right: 0px;
 }
 
-.button-icon:hover,
-.button-icon:focus{
+.button-icon a:hover ,
+.button-icon a:focus{
     border: 1px solid #4D5AE5;
 }
 
