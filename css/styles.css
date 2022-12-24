@@ -305,6 +305,10 @@ h1,h2,h3,p{
     height:112px;
     background-color:rgba(244, 244, 253, 1) ;
     margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    
 }
 
 
@@ -448,9 +452,13 @@ h1,h2,h3,p{
 }
 
 .list.soc li a{
-height: auto;
+height: 100%;
 width: 100%;
-display: block;}
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
 
 /* Customers */
 
@@ -560,6 +568,15 @@ display: block;}
     margin-right: 24px;
     fill: #8E8F99;
 }
+
+.button-icon-svg{
+    fill: #8E8F99;
+}
+.button-icon-svg:hover,
+.button-icon-svg:focus{
+    fill: rgba(77, 90, 229, 1);
+}
+
 .list.customers .icon:last-child .button-icon{
     margin-right: 0px;
 }
@@ -567,13 +584,15 @@ display: block;}
 .button-icon:hover,
 .button-icon:focus{
     border: 1px solid #4D5AE5;
-    fill: rgba(77, 90, 229, 1);
 }
 
 .icon a{
-height: auto;
+height: 100%;
 width: 100%;
-display: block;}
+display: flex;
+align-items: center;
+justify-content: center;}
+
 
 
 
@@ -670,9 +689,11 @@ width: 40px;
 }
 
 .social-media ul li a {
-    height: auto;
-    width: 100%;
-    display: block;
+    height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 }
 
 /* Portfolio */
